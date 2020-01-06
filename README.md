@@ -24,7 +24,7 @@ The task is to segment a two varieties of sushi on the plate (red sushi and blac
 
 #### Output Image
 
-The output show the two varieties of sushi in question classsifies, segmented and bounded (with a box). 
+The output shows the two varieties of sushis classsified, segmented and bounded (with a box). 
 Note, we have annotations for only two varieties of sushi (red sushi and black). 
 
 <img src="train-test/eval_output/eval_out.png" width="60%">
