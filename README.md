@@ -20,7 +20,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 >>> from detectron2.engine import DefaultTrainer
 ```
 ## The Segmentation Task
-The task is to segment a two varieties of sushi on the plate (red sushi and black). 
+The task is to segment a two varieties of sushi on the plate (red sushi and black sushi). 
 #### Input Image 
 
 <img src="data/small_images/val/IMG_4065-size_600_600.JPG" width="60%">
