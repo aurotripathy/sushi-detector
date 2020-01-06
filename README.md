@@ -13,10 +13,6 @@ The most concise install instructions are available at the top of the [Colab Not
 Run the followng in Python's interactive mode to ensure that the install was successful.
 
 ```
-(pyt1.2) auro@auro-ml:~/sushi_detector/train-test$ python
-Python 3.7.4 (default, Aug 13 2019, 20:35:49) 
-[GCC 7.3.0] :: Anaconda, Inc. on linux
-Type "help", "copyright", "credits" or "license" for more information.
 >>> from detectron2.engine import DefaultTrainer
 ```
 ## The Segmentation Task
