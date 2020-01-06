@@ -16,8 +16,8 @@ Python 3.7.4 (default, Aug 13 2019, 20:35:49)
 Type "help", "copyright", "credits" or "license" for more information.
 >>> from detectron2.engine import DefaultTrainer
 ```
-## Reviewing the Segmentation Task
-The task is to segment a few of the intems in the sushi plate. 
+## The Segmentation Task
+The task is to segment a two varieties of sushi on the plate (red sushi and black). 
 #### Input Image 
 
 <img src="data/small_images/val/IMG_4065-size_600_600.JPG" width="60%">
