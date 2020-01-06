@@ -9,7 +9,7 @@ This tutorial highlights the use of the training and evaluation APIs on a simple
 ## Detectron2 Installation 
 The most concise install instructions are available at the top of the [Colab Notebook](https://colab.research.google.com/drive/16jcaJoc6bCFAQ96jDe2HwtXj7BMD_-m5) where you'll find the prerequisite libraries and the install step.
 
-## Verifying The Install
+### Verifying The Install
 Run the followng in Python's interactive mode to ensure that the install was successful.
 
 ```
