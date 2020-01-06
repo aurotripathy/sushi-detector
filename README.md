@@ -2,9 +2,9 @@
 
 This project segments a variety of sushi pieces from the background. It can be used for counting the flavors of sushi items.
 
-It uses [Detectron2](https://github.com/facebookresearch/detectron2 "Detectron2") a PyTorch-powered  object detection and segmentation framework. Detectron2 is designed to support research and production needs. As of this post, it is at version 0.1 yet it appears to be mature. So expect a lot when it does get mature.
+It uses [Detectron2](https://github.com/facebookresearch/detectron2 "Detectron2") a PyTorch-powered  object detection and segmentation framework. Detectron2 is designed to support research and production needs. As of this post, it is at version 0.1 yet it appears to be mature (presumable becasue it is a rewrite in PyaTorch). So expect a lot when it does get mature.
 
-This tutorial highlights the use of the training and evaluation APIs on a simple segmentation task. Note, Detectron2 is capable of panoptic segmentation, pose estimation, DensePose, etc.
+This tutorial highlights the use of the training and evaluation APIs on a simple segmentation task. Note, Detectron2 is capable of other tasks such as panoptic segmentation, pose estimation, DensePose, etc.
 
 ## Detectron2 Installation 
 The most concise install instructions are available at the top of the [Colab Notebook](https://colab.research.google.com/drive/16jcaJoc6bCFAQ96jDe2HwtXj7BMD_-m5) where you'll find the prerequisite libraries and the install step.
