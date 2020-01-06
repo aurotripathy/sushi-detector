@@ -1,6 +1,6 @@
 ## Sushi Detector
 
-This project segments from the background, a variety of sushi pieces. A simple use-case would be to use it for counting the sushi items.
+This project segments from the background, a variety of sushi pieces. A simple use-case would be to use it for counting sushi in each category.
 
 It uses [Detectron2](https://github.com/facebookresearch/detectron2 "Detectron2") a PyTorch-powered  object detection and segmentation framework. Detectron2 is designed to support research and production needs. As of this post, it is at version 0.1 yet it appears to be mature (presumable becasue it is a rewrite in PyTorch). So expect a lot when it does get mature.
 
