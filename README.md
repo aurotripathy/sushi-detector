@@ -36,17 +36,17 @@ The default (or standard) model training workflow  can be captured in the three 
 
 ```
 trainer = DefaultTrainer(cfg)
-trainer.resume_or_load()  # load last checkpoint or MODEL.WEIGHTS
+trainer.resume_or_load(resume=False)  # load MODEL.WEIGHTS, not the last checkpoint
 trainer.train()
 ```
 
 ## Prediction
 
-The predictor is also based on a configuration. 
+The predictor is initialized from a configuration (cfg) and takes as input, an image, resizes it to the specified resolution, runs the model and produces a dict of predictions. Model loading and input preprocessing is taken care of for you via the configuration. 
 
 ```
 pred = DefaultPredictor(cfg)
 inputs = cv2.imread("input.jpg")
 outputs = pred(inputs)
 ```
-The predictor takes an image, resizes it to the specified resolution, runs the model and produces a dict of predictions. Model loading and input preprocessing is taken care of for you.
+
