@@ -29,3 +29,24 @@ Note, we have trained with annotations for only two varieties of sushi (red sush
 We'll add annotations for the other categories of sushi soon.  
 
 <img src="train-test/eval_output/eval_out.png" width="60%">
+
+## Training
+
+The default (or standard) model training workflow  can be captured in the three lines of code below. It creates a model, the optimizer, scheduler, dataloader from the given config (```cfg```).
+
+```
+trainer = DefaultTrainer(cfg)
+trainer.resume_or_load()  # load last checkpoint or MODEL.WEIGHTS
+trainer.train()
+```
+
+## Prediction
+
+The predictor is also based on a configuration. 
+
+```
+pred = DefaultPredictor(cfg)
+inputs = cv2.imread("input.jpg")
+outputs = pred(inputs)
+```
+The predictor takes an image, resizes it to the specified resolution, runs the model and produces a dict of predictions. Model loading and input preprocessing is taken care of for you.
