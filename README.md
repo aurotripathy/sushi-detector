@@ -42,7 +42,7 @@ trainer.train()
 
 ## Prediction
 
-The predictor is initialized from a configuration (cfg) and takes as input, an image, resizes it to the specified resolution, runs the model and produces a dict of predictions. Model loading and input preprocessing is taken care of for you via the configuration. 
+The instantiated predictor takes as input, an image, resizes it to the specified resolution, runs the model and produces a dict of predictions. Model loading and input preprocessing is taken care of for you via the configuration. 
 
 ```
 pred = DefaultPredictor(cfg)
