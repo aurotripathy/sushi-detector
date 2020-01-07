@@ -32,7 +32,7 @@ We'll add annotations for the other categories of sushi soon.
 
 ## Training
 
-The default (or standard) model training workflow  can be captured in the three lines of code below. It creates a model, the optimizer, scheduler, dataloader from the given config (```cfg```).
+The default (or standard) model training workflow  can be captured in the three lines of code below. It creates a model, the optimizer, scheduler, dataloader from the given config (```cfg```). THe next step is to load the model weights (optionally from the last checkpoint). The final step is to kick off the training.
 
 ```
 trainer = DefaultTrainer(cfg)
