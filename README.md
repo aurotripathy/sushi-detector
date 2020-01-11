@@ -50,3 +50,22 @@ inputs = cv2.imread("input.jpg")
 outputs = pred(inputs)
 ```
 
+## Visualization
+
+The Visualizer class can be initialized with 
+- an image of shape height, width, channels (and RGB format for the channels),
+- the superimposed metadata, and
+- a scale
+
+The `draw_dataset_dict` method draws annotations/segmentaions in the Detectron2 Dataset format and returns the superimposed image object with visulizations. The OpenCV library can be used to display the visualization. 
+
+```
+from detectron2.utils.visualizer import Visualizer
+for dict in random.sample(dataset_dicts, 3):
+    img = cv2.imread(dict["file_name"])
+    visualizer = Visualizer(img[:, :, ::-1],  # reverse channels
+                            metadata=sushi_metadata,
+                            scale=1.0)
+    vis = visualizer.draw_dataset_dict(dict)
+    cv2.imshow('window', vis.get_image()[:, :, ::-1])
+```
