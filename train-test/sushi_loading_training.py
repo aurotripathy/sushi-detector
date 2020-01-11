@@ -67,13 +67,12 @@ print('sushi_matadata', sushi_metadata)
 dataset_dicts = get_sushi_dicts("../data/small_images/train")
 
 # View a few
-for d in random.sample(dataset_dicts, 3):
-    img = cv2.imread(d["file_name"])
-    visualizer = Visualizer(img[:, :, ::-1],
+for dict in random.sample(dataset_dicts, 3):
+    img = cv2.imread(dict["file_name"])
+    visualizer = Visualizer(img[:, :, ::-1],  # reverse channels
                             metadata=sushi_metadata,
-                            # metadata=MetadataCatalog.get('sushi_train').thing_classes,
                             scale=1.0)
-    vis = visualizer.draw_dataset_dict(d)
+    vis = visualizer.draw_dataset_dict(dict)
     cv2.imshow('window', vis.get_image()[:, :, ::-1])
     cv2.waitKey(0)
     cv2.destroyAllWindows()
